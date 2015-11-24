@@ -48,7 +48,8 @@ body{
 	height: 100%;
 	margin: 0 auto;
 	font-family: 'IM Fell DW Pica SC', serif;
-	background-color: rgb(121,169,205);
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,0);
 }
 
 /******************************************
@@ -56,9 +57,12 @@ body{
 /*******************************************/
 
 header{
-	background-image: url(../images/as_cup.jpg); 
-	background-size: cover;
-	height: 800px;
+	background-image: url(../images/as_sign.jpg); 
+	overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
 	
 }
 
@@ -68,7 +72,8 @@ header{
 	height: 50px;
     width: 100%;
     margin: auto;
-	background-color: rgba(157,195,230, 0.4);
+	/*background-color: rgba(121,169,205, 1.0);*/
+	background-color: rgba(0,0,0,0.7);
 	text-align: center;
 	position: fixed;
 	width: 100%;
@@ -85,7 +90,6 @@ header{
 h1{
 	margin: auto;
 	text-align: center;
-	color: rgb(255, 255, 255);
 	font-size: 40px;
 	padding-top: 50px;
 }
@@ -93,8 +97,8 @@ h1{
 h2{
 	margin: auto;
 	text-align: center;
-	color: rgb(255, 255, 255);
-	font-size: 25px;
+	font-size: 30px;
+	color: rgb(195, 153, 83);
 }
 
 /******************************************
@@ -104,15 +108,73 @@ h2{
 #main{
 	height: 100%;
 	padding-top: 50px;
-	background-color: rgba(121,169,205, 0.8);
+	background-color: rgb(255, 255, 255);
 
 }
 
 section{
 	padding: 100px 80px;
 	border-bottom: rgba(216, 216, 216, 0.3);
-	border-size:0.1px;
 	border-style:solid;  
+}
+
+section h2{
+	padding-bottom: 20px;
+}
+
+/******************************************
+/* OUR COFFEE
+/*******************************************/
+
+#about-cc{
+	float: left;
+	width: 300px;
+}
+
+#our-coffee img{
+	height: 300px;
+	width: 500px;
+	float: right;
+}
+
+/******************************************
+/* MENU
+/*******************************************/
+
+#menu{
+	text-align: center;
+}
+
+#menu div{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+
+
+/******************************************
+/* VISIT US
+/*******************************************/
+#hours-location{
+	float: left;
+	height: 300px;
+}
+
+#map{
+	float: right;
+}
+
+#hours{
+	width: 400px;
+	margin-bottom: 50px;
+}
+
+#location{
+	width: 400px;
 }
 
 
