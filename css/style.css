@@ -48,50 +48,44 @@ body{
 	height: 100%;
 	margin: 0 auto;
 	font-family: 'IM Fell DW Pica SC', serif;
-	background-color: rgb(255,255,255);
 	color: rgb(0,0,0);
 }
 
-/******************************************
-/* Header/Navigation
-/*******************************************/
-
-header{
-	background-image: url(../images/as_sign.jpg); 
-	overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-	
+section{
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
+/******************************************
+/* HEADER
+/*******************************************/
 #nav-links{
-	font-size: 18px;
+	/*background-color: rgba(121,169,205, 1.0);*/
 	padding-top: 15px;
-	height: 50px;
+	height: 10%;
     width: 100%;
     margin: auto;
-	/*background-color: rgba(121,169,205, 1.0);*/
-	background-color: rgba(0,0,0,0.7);
+	/*background-color: rgba(72,72,72,1);*/
+	background-color: white;
 	text-align: center;
 	position: fixed;
-	width: 100%;
-	top: 0;
 }
 
 #nav-links a{
 	text-decoration: none;
-	padding-left: 50px;
-	padding-right: 50px;
-	color: rgb(255, 255, 255);
+	padding-left: 20px;
+	padding-right: 20px;
+	/*color: rgb(255, 255, 255);*/
+	color: black;
+	border-left: 2px solid black;
 }
 
 h1{
-	margin: auto;
-	text-align: center;
-	font-size: 40px;
-	padding-top: 50px;
+	color: black;
+	text-align: left;
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 40%;
 }
 
 h2{
@@ -101,21 +95,27 @@ h2{
 	color: rgb(195, 153, 83);
 }
 
+#visit-us-nav{
+	border-right: 2px solid black;
+}
+
+#nav-links a:hover {
+    color: rgb(195, 153, 83);
+}
+
 /******************************************
 /* MAIN SECTION
 /*******************************************/
 
 #main{
 	height: 100%;
-	padding-top: 50px;
 	background-color: rgb(255, 255, 255);
-
 }
 
-section{
-	padding: 100px 80px;
+.content-section{
 	border-bottom: rgba(216, 216, 216, 0.3);
-	border-style:solid;  
+	border-style:solid; 
+	text-align: center; 
 }
 
 section h2{
@@ -123,18 +123,33 @@ section h2{
 }
 
 /******************************************
+/* HOME
+/*******************************************/
+
+#home{
+	background-image: url(../images/as_sign.jpg); 
+	overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+/******************************************
 /* OUR COFFEE
 /*******************************************/
 
 #about-cc{
-	float: left;
+	display: inline-block;
 	width: 300px;
+	text-align: left;
+	margin-right: 100px;
 }
 
-#our-coffee img{
+#counter-culture{
+	display: inline-block;
 	height: 300px;
 	width: 500px;
-	float: right;
 }
 
 /******************************************
@@ -154,18 +169,32 @@ section h2{
 }
 
 
+/******************************************
+/* ABOUT US
+/*******************************************/
+
+#as-logo-door{
+	display: inline-block;
+	height: 420px;
+	width: 300px;
+	margin-right: 100px;
+}
+
+#about-as{
+	display: inline-block;
+	width: 300px;
+}
 
 
 /******************************************
 /* VISIT US
 /*******************************************/
 #hours-location{
-	float: left;
-	height: 300px;
+	display: inline-block;
 }
 
 #map{
-	float: right;
+	display: inline-block;
 }
 
 #hours{
@@ -184,10 +213,12 @@ section h2{
 footer{
 	text-align: center;
 	position: relative;
+	height: 100px;
+	margin-top: 5%;
 }
 
 #social-media-links a{
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 30px;
+	padding-right: 30px;
 	
 }
