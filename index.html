@@ -14,20 +14,29 @@ Developer @GA in SEA
 		<!-- external CSS link -->
 		<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,800' rel='stylesheet' type='text/css'> -->
 		<link rel="stylesheet" href="css/reset.css">
+		<link href="css/hover.css" rel="stylesheet" media="all">
 		<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
 		<title>Anchored Ship Coffee Bar</title>
 	</head>
 
 	<body>
-		<header>
+		<header id='page-header'>
+			<h1 id='as-initials'>AS</h1>
 			<nav id='nav-links'>
-				<h1>AS</h1>
-				<a id='home-nav' href='#home'>Home</a>
-				<a id='our-coffee-nav' href='#our-coffee'>Our Coffee</a>
-				<a id='menu-nav' href='#menu'>Menu</a> 
-				<a id='about-us-nav' href='#about-us'>About Us</a> 
-				<a id='visit-us-nav' href='#visit-us'>Visit Us</a> 
+				<ul>
+					<li class='hamburger'>
+						<div class='line'></div>
+						<div class='line'></div>
+						<div class='line'></div>
+					</li>	
+					<li><a id='home-nav' class='hvr-underline-from-center' href='#home'>Home</a></li>
+					<li><a id='our-coffee-nav' class='hvr-underline-from-center' href='#our-coffee'>Our Coffee</a></li>			
+					<li><a id='menu-nav' class='hvr-underline-from-center' href='#menu'>Menu</a></li>			
+					<li><a id='about-us-nav' class='hvr-underline-from-center' href='#about-us'>About Us</a></li>			
+					<li><a id='visit-us-nav' class='hvr-underline-from-center' href='#visit-us'>Visit Us</a></li>		
+				</ul>
 			</nav>
 		</header>
 
@@ -38,51 +47,59 @@ Developer @GA in SEA
 
 			<section id='our-coffee' class='clearfix content-section'>
 				<h2>Our Coffee</h2>
-				<h3>Counter Culture</h3>
-				<p id='about-cc'>It is of utmost concern that the coffee and milk experience we provide is not only quality, but protects the environment, while paying fare wages to the farmer who labor it. Counter Culture Coffee is most known for it's 19 years of experience in roasting specialty grade coffee. However, their reputaation is equally celebrated due to their coffee sourcing. It is through their efforts that Direct Relationships and Sustainable Agriculture are jargon linked to the western coffee industy setting new expectations for how coffee is purchased from foreign countries has renovated communities and enriched the lives of many coffee farmers globally. <br>
-				<a target='_blank' href="https://counterculturecoffee.com/">More On Counter Culture &gt;</a>
-				</p>
-
+				<div id='about-cc'>
+					<h4>Counter Culture</h4>
+					<p>
+						It is of utmost concern that the coffee and milk experience we provide is not only quality, but protects the environment, while paying fare wages to the farmer who labor it. Counter Culture Coffee is most known for it's 19 years of experience in roasting specialty grade coffee. However, their reputation is equally celebrated due to their coffee sourcing. It is through their efforts that Direct Relationships and Sustainable Agriculture are jargon linked to the western coffee industy setting new expectations for how coffee is purchased from foreign countries has renovated communities and enriched the lives of many coffee farmers globally. <br>
+						<br>
+					<a target='_blank' href="https://counterculturecoffee.com/">More On Counter Culture &gt;</a>
+					</p>
+				</div>
 				<img id='counter-culture' src='images/counter_culture.jpg'>
 			</section>
 
 			<section id='menu' class='clearfix content-section'>
 				<h2>Menu</h2>
+
 				<div class='coffee-menu'>
-					<p>
-						OUR GLORIOUS<br>
-						Espresso<br>
-						Americano<br>
-						Macchiato<br>
-						Cappuccino<br>
-						Cortado<br>
-						Latte<br>
-						Mocha<br>
-						and...<br>
-						Drip or Pour Over<br>
-					</p>
-				</div>
-				<div class='flavor-menu'>
-					<p>
-						OUR FLAVORS<br>
-						Vanilla<br>
-						Caramel<br>
-						Almond<br>
-						Hazelnut<br>
-						Seasonal (varies)<br>
-					</p>
-				</div>
-				<div class='bakery-menu'>
-					<p>
-						STANDARD BAKERY<br>
-						Fresh, Local, Organic Pastries<br>
-						Ellenos Greek Yogurt<br>
-						and...<br>
-						ALL DAY BREAKFAST SANDWICHES<br>
-						(until they are gone!)<br>
+					<h4>ESPRESSO + MILK<br>
+						8 / 12 / 16 oz</h4>
+					<p>	
+						Espresso, Americano, Macchiato, Cortado, Latte, Mocha, Hot Chocolate, Drip or Pour Over<br>Alternative Milks: Soy, Rice, Almond
 					</p>
 				</div>
 
+				<div class='flavor-menu'>
+					<h4>OUR FLAVORS</h4>
+					<p>
+						Vanilla, , Almond, Hazelnut, Seasonal (varies)
+					</p>
+				</div>
+
+				<div class='tea-menu'>
+					<h4>TEA</h4>
+					<p>
+						Lavendar Chai, House Chai, Loose Leaf, Iced Tea
+					</p>
+				</div>
+
+				<div class='bakery-menu'>
+					<h4>STANDARD BAKERY</h4>
+					<p>
+						Fresh, Local, Organic Pastries, Ellenos Greek Yogurt, Macrina Pastries, Lil' Ray's Pastries<br>
+						and...<br>
+						ALL DAY BREAKFAST SANDWICHES, (until they are gone!)
+					</p>
+				</div>
+
+				<div class='special-menu'>
+					<h4>SPEED BOAT SPECIAL (7 - 9 am)</h4>
+					<p>
+						Breakfast Sandwich + Drip Coffee = $5
+					</p>
+				</div>
+
+				<img id='coffee-sign' src='images/coffee_sign.jpg'>
 
 			</section>
 
@@ -99,7 +116,7 @@ Developer @GA in SEA
 				<h2>Visit Us</h2>
 				<div id='hours-location'>
 					<div id='hours'>
-						<h3>Hours</h3>
+						<h4>Hours</h4>
 						<p>
 							Monday thru Friday <br>
 							7:00am – 7:00pm <br>
@@ -109,13 +126,12 @@ Developer @GA in SEA
 						</p>
 					</div>
 					<div id='location'>
-					<h3>Location</h3>
+					<h4>Location</h4>
 						<p>
 							Anchored Ship - Ballard <br>
 							5306 Ballard Ave NW <br>
-							Seattle, WA 98107 
-
-							(206) 484-5143<br>
+							Seattle, WA 98107 <br>
+							(206) 484-5143
 						</p>
 					</div>
 				</div>
@@ -128,11 +144,12 @@ Developer @GA in SEA
 		</section>	
 
 		<footer>
+			<h2 id='footer-title'>Connect With Us!</h2>
 			<nav id='social-media-links'>
-				<a id='facebook' href='https://www.facebook.com/Anchored-Ship-Coffee-Bar-117506641609920/'><img src='images/facebook.svg'></a> 
-				<a id='yelp' href='http://www.yelp.com/biz/anchored-ship-coffee-bar-seattle'><img src='images/yelp.svg'></a> 
-				<a id='twitter' href='https://twitter.com/anchored_ship'><img src='images/twitter.svg'></a>
-				<a id='instagram' href='https://www.instagram.com/anchoredshipcoffeebar/'><img src='images/instagram.svg'></a> 
+				<a target='_blank' id='facebook' class='hvr-grow-shadow' href='https://www.facebook.com/Anchored-Ship-Coffee-Bar-117506641609920/'><img src='images/facebook.svg'></a> 
+				<a target='_blank' id='yelp' class='hvr-grow-shadow' href='http://www.yelp.com/biz/anchored-ship-coffee-bar-seattle'><img src='images/yelp.svg'></a> 
+				<a target='_blank' id='twitter' class='hvr-grow-shadow' href='https://twitter.com/anchored_ship'><img src='images/twitter.svg'></a>
+				<a target='_blank' id='instagram' class='hvr-grow-shadow' href='https://www.instagram.com/anchoredshipcoffeebar/'><img src='images/instagram.svg'></a> 
 			</nav>
 		</footer>
 
