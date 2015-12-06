@@ -28,4 +28,9 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop: $('#visit-us').offset().top}, 1000);
 		return false;
 	});
+
+	//hamburger display
+	$('.hamburger').click(function(){
+		$('ul').toggleClass('nav-height');
+	})
 });
