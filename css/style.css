@@ -40,6 +40,10 @@ Developer @GA in SEA
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+/******************************************
+/* HOVER EFFECT STYLE CLASSES
+/*******************************************/
+
 /* Grow Shadow */
 .hvr-grow-shadow {
   display: inline-block;
@@ -209,6 +213,7 @@ ul a:hover {
 	font-family: 'News Cycle', sans-serif;
 	font-size: 0.7em;
 	margin-right: 30px;
+	line-height: 1.1em;
 }
 
 #about-cc p{
@@ -245,6 +250,7 @@ ul a:hover {
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-bottom: 30px;
+	line-height: 1.2em;
 }
 
 #menu p{
@@ -263,7 +269,6 @@ ul a:hover {
 
 #as-logo-door{
 	display: inline-block;
-	height: 420px;
 	width: 400px;
 	margin-right: 100px;
 	border-radius: 3%;
@@ -276,6 +281,7 @@ ul a:hover {
 	font-size: 0.7em;
 	vertical-align: top;
 	text-align: left;
+	line-height: 1.3em;
 }
 
 
@@ -306,6 +312,7 @@ ul a:hover {
 
 #hours-location{
 	display: inline-block;
+	line-height: 0.9em;
 }
 
 #map{
@@ -335,7 +342,7 @@ footer{
 #footer-title{
 	padding-top: 20px;
 	color: black;
-	font-size: 0.6em;
+	font-size: 0.7em;
 }
 
 #social-media-links a img{
@@ -346,9 +353,51 @@ footer{
 /******************************************
 /* MEDIA QUERY
 /*******************************************/
+@media (max-width: 1101px) {
+	#about-cc{
+		display: block;
+		width: 90%;
+		text-align: justify;
+		padding-left: 80px;
+		padding-bottom: 20px;
+		line-height: 1.3em;
+	}
+}
+
+@media (max-width: 971px) {
+	#about-as{
+		display: block;
+		width: 90%;
+		text-align: justify;
+		padding-left: 80px;
+		line-height: 1.3em;
+	}
+
+	#as-logo-door{
+		text-align: center;
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+}
+
+
 @media (max-width: 768px){
 
-	
+	h1{
+		display: none;
+	}
+
+	#home{
+		height: 500px;
+	}
+
+	#about-cc{
+		display: block;
+		width: 90%;
+		text-align: justify;
+		padding-left: 80px;
+		line-height: 1.3em;
+	}
 
 }
 
