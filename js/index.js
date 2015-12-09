@@ -34,4 +34,8 @@ $(document).ready(function() {
 		$('ul').toggleClass('nav-height');
 	})
 
+	$('#nav-links a').click(function(){
+		$('ul').toggleClass('nav-height');
+	})
+
 });

@@ -150,7 +150,6 @@ h2{
 	padding-top: 30px;
 }
 
-
 /******************************************
 /* HEADER
 /*******************************************/
@@ -192,27 +191,12 @@ ul a:hover {
     color: rgb(195, 153, 83);
 }
 
-/*HAMBURGER*/
-.line{
-	width: 3em;
-	height: .3em;
-	background: black;
-	border-radius: 1em;
-	margin-top: .25em;
-}
-.line:first-of-type{
-	margin-top:.7em;
-}
+/******************************************
+/* HAMBURGER
+/*******************************************/
 
-#page-header nav li:first-child{
+#page-header .hamburger{
 	display: none;
-}
-
-.nav-height li{
-	height: 50px;
-	width: 280px;
-	background-color: white;
-	text-align: center;
 }
 
 /******************************************
@@ -223,7 +207,6 @@ ul a:hover {
 	height: 100%;
 	background-color: rgba(245,245,245,1);
 }
-
 
 .content-section {
 	border-bottom: rgba(216, 216, 216, 0.3);
@@ -457,18 +440,37 @@ footer{
 		height: 600px;
 	}
 
+	/* Hamburger */
+	.line{
+		width: 3em;
+		height: .3em;
+		background: black;
+		border-radius: 1em;
+		margin-top: .25em;
+	}
+	.line:first-of-type{
+		margin-top:.7em;
+	}
+
 	ul li{
-  		height: 0px;
-  		width: 100%;
+		height: 0px;
+		width: 100%;
+		text-align: center;
   		transition: height 0.5s;
   	}
 
-	#page-header nav li:first-child{
+	#page-header .hamburger{
 		display:block;
 		position: absolute;
 		top:.25em;
 		right:.5em;
 		cursor: pointer;
+	}
+
+	.nav-height li{
+		height: 50px;
+		background-color: white;
+		text-align: center;
 	}
 }
 
