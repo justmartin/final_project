@@ -192,6 +192,29 @@ ul a:hover {
     color: rgb(195, 153, 83);
 }
 
+/*HAMBURGER*/
+.line{
+	width: 3em;
+	height: .3em;
+	background: black;
+	border-radius: 1em;
+	margin-top: .25em;
+}
+.line:first-of-type{
+	margin-top:.7em;
+}
+
+#page-header nav li:first-child{
+	display: none;
+}
+
+.nav-height li{
+	height: 50px;
+	width: 280px;
+	background-color: white;
+	text-align: center;
+}
+
 /******************************************
 /* MAIN SECTION
 /*******************************************/
@@ -383,7 +406,7 @@ footer{
 		display: block;
 		width: 90%;
 		text-align: justify;
-		padding-left: 80px;
+		margin: 0 auto;
 		padding-bottom: 20px;
 		line-height: 1.3em;
 	}
@@ -395,7 +418,7 @@ footer{
 		display: block;
 		width: 90%;
 		text-align: justify;
-		padding-left: 80px;
+		margin: 0 auto;
 		line-height: 1.3em;
 	}
 
@@ -407,6 +430,7 @@ footer{
 }
 
 @media (max-width: 880px) {
+
 	#visit-us div div{
 		text-align: center;
 	}
@@ -426,7 +450,39 @@ footer{
 
 @media (max-width: 665px){
 	#counter-culture{
-		width: 550px;
+		width: 90%;
+	}
+
+	#home{
+		height: 600px;
+	}
+
+	ul li{
+  		height: 0px;
+  		width: 100%;
+  		transition: height 0.5s;
+  	}
+
+	#page-header nav li:first-child{
+		display:block;
+		position: absolute;
+		top:.25em;
+		right:.5em;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 460px){
+	#as-logo-door{
+		width: 90%;
+	}
+
+	#map{
+		width: 90%;
+	}
+
+	#home{
+		height: 400px;
 	}
 
 }
