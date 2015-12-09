@@ -169,6 +169,17 @@ header{
 	line-height: 1;
 }
 
+#as-logo{
+	width: 45px;
+	margin-left: 40px;
+	margin-top: 5px;
+	
+	/*-ms-transform: rotate(10deg); /* IE 9 */
+    /*-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    /*transform: rotate(10deg);*/
+
+}
+
 #page-header nav {
 	padding: 2% 3%;
 	float: right;
@@ -239,11 +250,12 @@ ul a:hover {
 	display: inline-block;
 	width: 350px;
 	text-align: left;
+	text-align: justify;
 	vertical-align: top;
 	font-family: 'News Cycle', sans-serif;
 	font-size: 0.7em;
-	margin-right: 30px;
-	line-height: 1.1em;
+	margin-right: 60px;
+	line-height: 1.2em;
 }
 
 #about-cc p{
@@ -310,6 +322,7 @@ ul a:hover {
 	font-size: 0.7em;
 	vertical-align: top;
 	text-align: left;
+	text-align: justify;
 	line-height: 1.3em;
 }
 
