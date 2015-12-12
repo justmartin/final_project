@@ -254,7 +254,7 @@ ul a:hover {
 	vertical-align: top;
 	font-family: 'News Cycle', sans-serif;
 	font-size: 0.7em;
-	margin-right: 60px;
+	margin-right: 100px;
 	line-height: 1.2em;
 }
 
@@ -359,8 +359,17 @@ ul a:hover {
 
 #map{
 	display: inline-block;
-	padding-left: 50px;
+	padding-left: 100px;
 	border-radius: 3%;
+}
+
+/******************************************
+/* INSTA-GALLERY
+/*******************************************/
+
+#insta-gallery{
+	padding-bottom: 70px;
+	text-align: center;
 }
 
 /******************************************
@@ -444,16 +453,9 @@ footer{
 	}
 }
 
-@media (max-width: 665px){
-	#counter-culture{
-		width: 90%;
-	}
+@media (max-width: 760px){
 
-	#home{
-		height: 600px;
-	}
-
-	/* Hamburger */
+/* Hamburger */
 	.line{
 		width: 3em;
 		height: .3em;
@@ -495,6 +497,17 @@ footer{
 		height: 50px;
 		background-color: white;
 		text-align: center;
+	}
+
+}
+
+@media (max-width: 665px){
+	#counter-culture{
+		width: 90%;
+	}
+
+	#home{
+		height: 600px;
 	}
 }
 
