@@ -124,39 +124,6 @@ Developer @GA in SEA
   right: 0;
 }
 
-/* Underline From Left */
-.hvr-underline-from-left {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-left:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: rgb(195, 153, 83);
-  height: 2px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-  right: 0;
-}
-
 /******************************************
 /* BASE STYLES /*1280 x 800*/
 /*******************************************/
@@ -306,24 +273,36 @@ ul a:hover {
 	color: black;
 }
 
+#about-cc a:hover {
+    color: rgb(195, 153, 83);
+}
+
 
 /******************************************
 /* MENU
 /*******************************************/
 #menu{
 	padding-bottom: 70px;
+	text-align: center;
+
 }
 
-#menu div{
+#menu-box{
+	display: inline-block;
+	margin-right: 100px;
+}
+
+#menu-box div{
 	font-size: 0.7em;
 	font-family: 'News Cycle', sans-serif;
-	padding-left: 10%;
-	padding-right: 10%;
 	padding-bottom: 30px;
 	line-height: 1.2em;
+	width: 550px;
+	text-align: left;
+	text-align: justify;
 }
 
-#menu p{
+#menu-box p{
 	font-size: 0.9em;
 	color: rgb(100,100,100);
 }
@@ -331,9 +310,9 @@ ul a:hover {
 #as-logo-door{
 	display: inline-block;
 	width: 400px;
-	margin-right: 100px;
 	border-radius: 3%;
-	display: none;
+	vertical-align: top;
+	margin-top: 150px;
 }
 
 /******************************************
@@ -424,22 +403,21 @@ footer{
 		padding-bottom: 20px;
 		line-height: 1.3em;
 	}
-}
 
-@media (max-width: 971px) {
+	#menu-box{
+		margin-right: 0px;
+	}
 
-	#about-as{
+	#menu-box div{
 		display: block;
 		width: 90%;
-		text-align: justify;
 		margin: 0 auto;
+		padding-bottom: 20px;
 		line-height: 1.3em;
 	}
 
 	#as-logo-door{
-		text-align: center;
-		margin-bottom: 20px;
-		margin-right: 0px;
+		margin-top: 20px;
 	}
 }
 
